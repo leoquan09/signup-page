@@ -5,6 +5,10 @@
     font-family: 'Roboto';
 }
 
+form {
+    margin: 100px;
+}
+
 .credit {
     position: absolute;
     bottom: 0;
@@ -42,10 +46,15 @@
     background-color: rgba(250, 250, 250, 0.5);
 }
 
-.signup {
+.signup-text, .signup {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
+}
+
+.signup-text {
+    margin: 30px;
 }
