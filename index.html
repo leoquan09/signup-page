@@ -17,17 +17,34 @@
         </div>
     <!-- description text-->
         <div class="signup">
-            <p class="signup-text">Chance to sign up for totally not fake skate lessons with a real pro. Join now and earn 50% off and plus, you know you want to sign up!</p>
+            <div class="signup-text">
+                <p>Chance to sign up for totally not fake skate lessons with a real pro. Join now and earn 50% off and plus, you know you want to sign up!</p>
+                <br>
+            </div>
     <!-- signup form-->
             <form class="signup-form" action="/" method="post">
-                <h3 class="form-title">Lets do this!</h3>
+                <h3>Lets do this!</h3>
                 <div class="names">
-                    <label for="first-name">First name</label>
-                    <input id="first-name" type="text" placeholder="Andy" name="user-first-name">
-                    <label for="last-name">Last name</label>
-                    <input id="last-name" type="text" placeholder="Anderson" name="user-last-name">
+                    <label for="first-name">First name:</label>
+                    <input minlength="2" id="first-name" type="text" placeholder="Andy" name="user-first-name">
+                    <label for="last-name">Last name:</label>
+                    <input minlength="2" id="last-name" type="text" placeholder="Anderson" name="user-last-name">
                 </div>
+                <div class="contacts">
+                    <label for="phone">Phone number:</label>
+                    <input type="text" id="phone" placeholder="123-456-7890" name="user-phone">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="example@gmail.com" name="user-email">
+                </div>
+                <div class="user">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="CatInTheRiceHat" name="username">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="12345" name="user-password">
+                </div>
+                <button type="submit" class="submit">Create Account</button>
             </form>
+            <p>Already have an account? <a href="google.com">Sign up here</a></p>
         </div>
     </div>
 </body>

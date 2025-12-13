@@ -9,9 +9,23 @@ form {
     margin: 100px;
 }
 
-input:valid {
+input:user-valid {
     border: 1px solid green;
 }
+
+input:user-invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid blue;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
 
 .credit {
     position: absolute;
@@ -51,12 +65,11 @@ input:valid {
 }
 
 .signup-text, .signup-form {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin: 10px;
+}
+
+.signup-form {
+    background-color: aliceblue;
 }
 
 .signup {
@@ -64,6 +77,23 @@ input:valid {
     flex-direction: column;
 }
 
+.names, .contacts, .user, .submit {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin: 10px;
+}
+
 .signup-text {
     margin: 30px;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50; 
+    color: white;            
+    border: none;        
+    border-radius: 6px;      
+    cursor: pointer;
 }
